@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CALCULATOR</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            background-color: orange;
+        }
+        .b{
+            width: 78px;
+            height: 78px;
+            margin-bottom: 12px;
+            margin-left: 8px;
+            margin-right: 0px;
+            margin-top: 3px;
+            background-color: yellowgreen;
+            border:1px solid black;
+            border-radius: 5px;
+            font-size: 40px;
+        }
+        #dis{
+            margin-left: 3px;
+            width: 353px;
+            height: 80px;
+            background-color: grey;
+            border: 3px solid black;
+            border-radius: 5px;
+            font-size: 55px;
+            margin-top: 10px;
+        }
+        .keys{
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: orange;
+        }
+        .b:hover{
+            background-color: red;
+        }
+    </style>
+</head>
+<body bgcolor="grey">
+    
+    <div class="container">
+    <div class="dispaly">
+        <form action="">
+        <input type="text" name="" id="dis">
+    </form>
+    </div>
+    
+    <hr>
+    
+    <div class="keys">
+        <form action="">
+            <input type="button" value="%"class="b"onclick="dis.value +='%'">
+            <input type="button" value="."class="b"onclick="dis.value +='.'">
+            <input type="button" value="^"class="b"onclick="dis.value +='^'">
+            <input type="button" value=","class="b"onclick="dis.value +=','">
+            <br>
+            <input type="button" value="{"class="b"onclick="dis.value +='{'">
+            <input type="button" value="}"class="b"onclick="dis.value +='}'">
+            <input type="button" value="("class="b"onclick="dis.value +='('">
+            <input type="button" value=")"class="b"onclick="dis.value +=')'">
+            <br>
+        <input type="button" value="1"class="b"   onclick="dis.value +='1'">
+        <input type="button" value="2"class="b"onclick="dis.value +='2'">
+        <input type="button" value="3"class="b"onclick="dis.value +='3'">
+        <input type="button" value="x"class="b"onclick="dis.value +='*'">
+        <br>
+        <input type="button" value="4"class="b"onclick="dis.value +='4'">
+        <input type="button" value="5"class="b"onclick="dis.value +='5'">
+        <input type="button" value="6"class="b"onclick="dis.value +='6'">
+        <input type="button" value="+"class="b"onclick="dis.value +='+'">
+        <br>
+        <input type="button" value="7"class="b"onclick="dis.value +='7'">
+        <input type="button" value="8"class="b"onclick="dis.value +='8'">
+        <input type="button" value="9"class="b"onclick="dis.value +='9'">
+        <input type="button" value="-"class="b"onclick="dis.value +='-'">
+        <br>
+        <input type="reset" value="c"class="b"onclick="dis.value=''">
+        <input type="button" value="0"class="b"onclick="dis.value +='0'"> 
+        <input type="button" value="/"class="b"onclick="dis.value +='/'">
+        <input type="button" value="="class="b"onclick="dis.value =eval(dis.value)">
+    </form>
+    </div>
+
+</div>
+
+</body>
+</html>
